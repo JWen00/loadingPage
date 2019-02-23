@@ -20,12 +20,11 @@ body {
     height: 200px;
     margin: 150px auto 50px auto;
     font-size: 50px;
-    text-shadow: -1 2 3 #000;
+    text-shadow: -1 2 3 #FBD000;
     text-align: center;
 }
 
 .loader-frame {
-
     width: 100px;
     height: 100px;
     margin: auto;
@@ -33,8 +32,6 @@ body {
 }
 
 .loader {
-    background: #049CD8; /* Blue */
-    opacity: 70%;
     position: absolute;
     border: 5px solid transparent;
     border-radius: 50%;
@@ -45,7 +42,7 @@ body {
     height: 100px;
     border-top: 5px solid #FBD000; /* Yellow */
     border-bottom: 5px solid #FBD000;
-    animation: clockwiseSpin 3s linear 10;
+    animation: clockwiseSpin 4s linear infinite;
  }
 
 #loader2 {
@@ -54,17 +51,17 @@ body {
     border-top: 5px solid #E52521; /* Re d */
     border-bottom: 5px solid #E52521;
     top: 5px; left: 5px;
-    animation: antiClockwiseSpin 3s linear 10;
+    animation: antiClockwiseSpin 4s linear infinite;
  }
 
 @keyframes clockwiseSpin {
     from {transform: rotate(0deg);}
-    to {transform: rotate(90deg);}
+    to {transform: rotate(180deg);}
 }
 
 @keyframes antiClockwiseSpin {
     from {transform: rotate(0deg);}
-    to {transform: rotate(-360deg);}
+    to {transform: rotate(-1080deg);}
 }
 
 

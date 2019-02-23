@@ -1,0 +1,81 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.backboard {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.words {
+    width: 300px;
+    height: 200px;
+    margin: 150px auto 50px auto;
+    font-size: 50px;
+    text-shadow: -1 2 3 #000;
+    text-align: center;
+}
+
+.loader-frame {
+
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
+
+.loader {
+    background: #049CD8; /* Blue */
+    opacity: 70%;
+    position: absolute;
+    border: 5px solid transparent;
+    border-radius: 50%;
+}
+
+#loader1 {
+    width: 100px;
+    height: 100px;
+    border-top: 5px solid #FBD000; /* Yellow */
+    border-bottom: 5px solid #FBD000;
+    animation: clockwiseSpin 3s linear 10;
+ }
+
+#loader2 {
+    width: 90px;
+    height: 90px;
+    border-top: 5px solid #E52521; /* Re d */
+    border-bottom: 5px solid #E52521;
+    top: 5px; left: 5px;
+    animation: antiClockwiseSpin 3s linear 10;
+ }
+
+@keyframes clockwiseSpin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+
+@keyframes antiClockwiseSpin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+
+
+
+
+  /*
+  MARIO Colours
+    Black: #000000;
+    Blue: #049CD8;
+    Yellow: #FBD000;
+    Red: #E52521;
+    Green: #43B047;
+  */

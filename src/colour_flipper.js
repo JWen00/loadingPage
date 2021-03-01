@@ -9,4 +9,3 @@ randomise_btn.addEventListener("click", () => {
 	container.style.backgroundColor = new_colour; 
 	document.getElementById('colour_hex').innerHTML = new_colour;
 })
-s	

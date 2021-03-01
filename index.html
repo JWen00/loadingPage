@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/public/js/terminal_typing.js"  type="text/javascript"  defer></script>
-    <script src="/public/js/colour_flipper.js"   type="text/javascript" defer></script>
-    <link rel="stylesheet" type="text/css" href="/public/style/index.css">
+    <meta http-equiv="X-UA-Compatible" content='ie=edge'>
+    <script src='src/terminal_typing.js' type="text/javascript"  defer></script>
+    <script src='src/colour_flipper.js' type="text/javascript" defer></script>
+    <script src='src/countdown.js' type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="src/countdown.css">
+    <link rel="stylesheet" type="text/css" href="src/index.css">
     <title>Muune</title>
 </head>
 <body>
@@ -15,12 +17,35 @@
         <span id="text"></span>
         <span id="blingbling">&#32;</span>
     </div>
-    <div class="project-container" id="colour_container">
+    <div class="project-container" id="colour_container" style="background-color: #41DAF7;">
         <h1>Colour Randomiser <span id="colour_hex"></span></h1>
         <button id="randomise_btn">Random</button>
-     
-
     </div>
+    <div class="project-container" id="colour_container">
+        <h1>Countdown to my 21st Birthday</h1>
+        <div class="countdown-container">
+
+            <div class="countdown-num-container">
+                <span id="countdown-days"></span>
+                Days
+            </div>
+            <div class="countdown-num-container">
+                <span id="countdown-hours"></span>
+                Hours
+            </div>
+            <span id="colon-divider">:</span>
+            <div class="countdown-num-container">
+                <span id="countdown-minutes"></span>
+                Minutes
+            </div>
+            <div class="countdown-num-container">
+                <span  id="countdown-seconds"></span>
+                Seconds
+            </div>
+            <span id="countdown-msg"></span>
+        </div>
+    </div>
+        
     
 </body>
 </html>

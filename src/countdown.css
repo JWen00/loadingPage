@@ -1,0 +1,22 @@
+.countdown-container { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+.countdown-num-container { 
+    width: 70px; 
+    height: 70px; 
+    border: 1px solid black; 
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    font-size: 20px;
+}
+#colon-divider { 
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}

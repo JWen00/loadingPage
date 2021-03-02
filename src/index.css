@@ -1,12 +1,43 @@
-.project-container { 
-    width: 90%; 
-    padding: 10px; 
-    height: 200px; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: auto;
-    margin-bottom: 20px;
+* { 
+    margin: 0; 
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
 }
-.button { 
+h1 { 
+    font-size: 28px;
+}
+body { 
+    position: relative;  
+}
+
+.container { 
+    display: flex; 
+    height: 100vh;  
+    display: flex;
+    padding-left: 100px; 
+    padding-right: 100px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+} 
+.project-container { 
+    display: none;
+    margin: 30px;
+  
+}
+#colour-hex { 
+    position:absolute; 
+    top: 20px; 
+    left: 10px;
+    color: white;
+    font-size: 30px; 
+
+}
+#randomise-colour-btn { 
+    position:absolute; 
+    top: 20px; 
+    right: 10px;
     padding: 5px; 
     border-radius: 5px;
     border-style: solid;

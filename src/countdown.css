@@ -4,8 +4,7 @@
     justify-content: center;
 }
 .countdown-num-container { 
-    width: 70px; 
-    height: 70px; 
+    flex: 1 1 0;
     border: 1px solid black; 
     border-radius: 10px;
     text-align: center;
@@ -13,7 +12,6 @@
     flex-direction: column;
     justify-content: center;
     margin: 5px;
-    font-size: 20px;
 }
 #colon-divider { 
     font-size: 20px;

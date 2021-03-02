@@ -4,48 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content='ie=edge'>
+    <script src='src/tabs.js' type="text/javascript"  defer></script>
     <script src='src/terminal_typing.js' type="text/javascript"  defer></script>
     <script src='src/colour_flipper.js' type="text/javascript" defer></script>
+    <script type="module">
+        import { getBackgroundColour } from 'src/colour_flipper.js';
+    </script>
     <script src='src/countdown.js' type="text/javascript" defer></script>
+    <script src='src/scrolling.js' type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="src/tabs.css">
     <link rel="stylesheet" type="text/css" href="src/countdown.css">
     <link rel="stylesheet" type="text/css" href="src/index.css">
     <title>Muune</title>
 </head>
 <body>
-    <div class="project-container">
-        <h1>Terminal Typing</h1>
-        <span id="text"></span>
-        <span id="blinker"></span>
+    <div class="container" id="colour_container">
+        <span id="colour-hex"></span>
+        <button id="randomise-colour-btn">Change Background Colour</button>
+        <div class="tab">
+            <button class="tablinks active" onclick="openProject(event, 'terminal-typing')"></button>
+            <button class="tablinks" onclick="openProject(event, 'countdown')"></button>
+            <button class="tablinks" onclick="openProject(event, 'testing')"></button>
+          </div>
+        <div class="project-container" id='terminal-typing' style="display: block;">
+            <h1>Terminal Typing</h1>
+            <span id="text"></span>
+            <span id="blinker"></span>
 
-    </div>
-    <div class="project-container" id="colour_container" style="background-color: #41DAF7;">
-        <h1>Colour Randomiser <span id="colour_hex"></span></h1>
-        <button id="randomise_btn">Random</button>
-    </div>
-    <div class="project-container" id="colour_container">
-        <h1>Countdown to my 21st Birthday</h1>
-        <div class="countdown-container">
-
-            <div class="countdown-num-container">
-                <span id="countdown-days"></span>
-                Days
-            </div>
-            <div class="countdown-num-container">
-                <span id="countdown-hours"></span>
-                Hours
-            </div>
-            <span id="colon-divider">:</span>
-            <div class="countdown-num-container">
-                <span id="countdown-minutes"></span>
-                Minutes
-            </div>
-            <div class="countdown-num-container">
-                <span  id="countdown-seconds"></span>
-                Seconds
-            </div>
-            <span id="countdown-msg"></span>
         </div>
+        <div class="project-container" id="countdown">
+            <h1>Countdown to 21st </h1>
+            <div class="countdown-container">
+
+                <div class="countdown-num-container">
+                    <span id="countdown-days"></span>
+                    <p></p>Days
+                </div>
+                <div class="countdown-num-container">
+                    <span id="countdown-hours"></span>
+                    Hours
+                </div>
+                <span id="colon-divider">:</span>
+                <div class="countdown-num-container">
+                    <span id="countdown-minutes"></span>
+                    Minutes
+                </div>
+                <div class="countdown-num-container">
+                    <span  id="countdown-seconds"></span>
+                    Seconds
+                </div>
+                <span id="countdown-msg"></span>
+            </div>
+        </div>
+        <div class="project-container" id="texting"></div>
     </div>
+    
         
     
 </body>
